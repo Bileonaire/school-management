@@ -11,7 +11,10 @@ import {
   MatButtonModule,
   MatTabsModule,
   MatBadgeModule,
-  MatGridListModule
+  MatGridListModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatRippleModule,
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -31,6 +34,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatTabsModule,
     MatBadgeModule,
     MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRippleModule,
   ],
   exports: [
     MatToolbarModule,
@@ -45,7 +51,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatButtonModule,
     MatTabsModule,
     MatBadgeModule,
-    MatGridListModule
+    MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRippleModule,
   ]
 })
 export class AngularMaterialModule {}

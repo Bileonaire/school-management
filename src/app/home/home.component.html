@@ -1,5 +1,88 @@
-<div>
-  <p>
-    home works!
-  </p>
-</div>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous">
+<script src="assets/bootstrap/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="background">
+
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 offset-xl-2 offset-md-1 order-md-2 mb-5 mb-md-0">
+
+        <!-- Image -->
+        <div class="text-center">
+          <img src="assets/images/studying.svg" alt="..." class="img-fluid">
+        </div>
+
+      </div>
+      <div class="col-12 col-md-5 col-xl-4 order-md-1 my-5">
+
+        <!-- Heading -->
+        <h1 class="display-4 text-center mb-3">
+          Sign in
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-muted text-center mb-5">
+          Access ST. MARY'S SCHOOL dashboard.
+        </p>
+
+        <!-- Form -->
+        <form #f="ngForm" (ngSubmit)="onSubmit(f); f.reset()">
+
+          <!-- username -->
+          <div class="form-group">
+            <label>Username</label>
+            <input name="username" ngModel required #username="ngModel" class="form-control" placeholder="Enter your username">
+          </div>
+
+          <!-- Password -->
+          <div class="form-group">
+            <div class="row">
+              <div class="col">
+                <label>Password</label>
+              </div>
+              <div class="col-auto">
+                <a href="password-reset-illustration.html" class="form-text small text-muted">
+                  Forgot password?
+                </a>
+              </div>
+            </div> <!-- / .row -->
+
+            <!-- Input group -->
+            <div class="input-group input-group-merge">
+              <input name="password" ngModel required #password type="password" class="form-control form-control-appended" placeholder="Enter your password">
+              <div class="input-group-append">
+                <span class="input-group-text">
+                  <i class="fe fe-eye"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Submit -->
+          <button class="btn btn-lg btn-block btn-primary mb-3">
+            Sign in
+          </button>
+          <!-- Link -->
+          <div class="text-center">
+            <small class="text-muted text-center">
+              Don't have an account yet? <a href="sign-up-illustration.html">Sign up</a>.
+            </small>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
