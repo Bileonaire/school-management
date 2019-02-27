@@ -36,6 +36,7 @@ export class HomeComponent implements OnInit {
         response => {
           const token = response.data.tokenAuth.token;
           localStorage.setItem('token', token);
+          this.toastr.success('You are now logged in', 'Successful');
           return this.router.navigate(['/admin']);
         },
         err => this.handleEventError(err)

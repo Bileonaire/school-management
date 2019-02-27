@@ -22,7 +22,11 @@ import { ToastrModule } from 'ngx-toastr';
     FormsModule,
     GraphQLModule,
     HttpClientModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(
+      {
+        toastClass: 'toast toast-bootstrap-compatibility-fix'
+      }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent],
