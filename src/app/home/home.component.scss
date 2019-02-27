@@ -1,0 +1,31 @@
+.container {
+    margin: auto;
+    margin-top: 200px;
+}
+
+.input-group.input-group-merge>.form-control-appended {
+    padding-right: .375rem;
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+    border-right-width: 0;
+}
+
+.input-group.input-group-merge>.form-control {
+    border-radius: .375rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1rem + 2px);
+    padding: .5rem .75rem;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #12263f;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d2ddec;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
