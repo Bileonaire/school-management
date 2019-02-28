@@ -1,0 +1,92 @@
+<h1>
+  Students Management
+</h1>
+<br>
+
+<div>
+  <h5> Filter by: </h5>
+  <form #f="ngForm" (ngSubmit)="filterStudents(f);" novalidate class="form-horizontal" role="form" method="post">
+    <div class="row">
+      <div class="form-group">
+        <div class="col-sm-12">
+          <label for="classesID" class="control-label">
+            Class </label>
+          <select name="classesID" id="classesID" class="form-control" ngModel #classesID="ngModel">
+            <option value="0">All</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select> </div>
+      </div>
+      <div class="form-group col-sm-1">
+        <div class="col-sm-15">
+          <label for="classesID" class="control-label">
+            Gender </label>
+          <select name="FFFF" id="classesID" class="form-control" ngModel>
+            <option value="0">male</option>
+            <option value="1">female</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group col-sm-1">
+        <div class="col-sm-15">
+          <label for="classesID" class="control-label">
+            Gender </label>
+          <select name="gender" id="classesID" class="form-control" ngModel>
+            <option value="0">male</option>
+            <option value="1">female</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group col-sm-1">
+        <div class="col-sm-15">
+          <button class="btn btn-info">Filter</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+      <th scope="col">Handl</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>@mdo</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>@mdo</td>
+    </tr>
+  </tbody>
+</table>
