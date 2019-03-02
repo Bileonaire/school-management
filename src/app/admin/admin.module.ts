@@ -6,21 +6,25 @@ import { FormsModule } from '@angular/forms';
 import { AdminRoutingModule } from './admin-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdminComponent } from './admin/admin.component';
-// import { AngularMaterialModule } from '../angular-material.module';
 
 import { environment } from '../../environments/environment';
+import { StudentsComponent } from './students/students.component';
+import { ParentsComponent } from './parents/parents.component';
+import { TeachersComponent } from './teachers/teachers.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     AdminComponent,
+    StudentsComponent,
+    ParentsComponent,
+    TeachersComponent,
   ],
   imports: [
     CommonModule,
     HttpClientModule,
     AdminRoutingModule,
-    FormsModule,
-    // AngularMaterialModule,
+    FormsModule
   ],
   providers: []
 })

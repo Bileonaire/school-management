@@ -6,7 +6,7 @@ import { setContext } from 'apollo-link-context';
 import { HttpHeaders } from '@angular/common/http';
 import { Apollo } from 'apollo-angular';
 
-const uri = 'https://0e802cd7.ngrok.io/graphql/'; // <-- add the URL of the GraphQL server here
+const uri = 'https://1e30329e.ngrok.io/graphql/'; // <-- add the URL of the GraphQL server here
 export function createApollo(httpLink: HttpLink, apollo: Apollo) {
   const http = httpLink.create({ uri: uri });
 
